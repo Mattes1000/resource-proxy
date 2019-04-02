@@ -175,6 +175,7 @@ java.text.SimpleDateFormat" %>
                     // StackOverflow http://stackoverflow.com/questions/31452074/how-to-proxy-http-requests-in-spring-mvc
                     if (headerFieldKey != null && headerFieldKey.toLowerCase().equals("transfer-encoding")) {
 	                    if (value != null && value.toLowerCase().equals("chunked")) {
+                            headerFieldKey=null;
 		                    continue;
 	                    }
                     }
